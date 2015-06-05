@@ -1,2 +1,2 @@
 # js-th
-JS adventures from Treehouse
+Test site for learning javascript.
