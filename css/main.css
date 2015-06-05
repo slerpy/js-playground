@@ -1,7 +1,6 @@
-a {
-    text-decoration: none;
-    color: #6ab47b;
-}
+/***********************************************************
+ GENERAL, SITE WIDE
+************************************************************/
 
 #wrapper {
     max-width: 940px;
@@ -9,33 +8,59 @@ a {
     padding: 0 5%;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+
+/***********************************************************
+ HEADING
+************************************************************/
+
 #logo {
     text-align: center;
     margin: 0;
 }
 
+
+
+/***********************************************************
+COLORS
+************************************************************/
+
+/* site body */
+body {
+    background-color: #fff;
+    color: #999;
+}
+
+/* GREEN-ISH HEADER */
 header {
     background: #6ab47b;
     border-color: #599a68;
 }
 
-h1, h2 {
-    color: #fff;
-}
-
+/* nav background on mobile */
 nav {
     background: #599a68;
 }
 
+/* logo text */
+h1, h2 {
+    color: #fff;
+}
+
+a {
+    color: #6ab47b;
+}
+
+/* nav links */
 nav a, nav a:visited {
     color: #fff;
 }
 
+/* selected nav links */
 nav a.selected, nav a:hover {
     color: #32673f;
-}
-
-body {
-    background-color: #fff;
-    color: #999;
 }
