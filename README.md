@@ -1,2 +1,2 @@
 # js-th
-Test site for learning javascript.
+Basic frame of a site to experiment with while honing javascript knowledge.
