@@ -5,7 +5,7 @@ TYPE SELECTORS
 body {
     color: #878787;
     margin: 0;
-    font: normal 1em/1.5 "helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 1em/1.5 "helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -18,18 +18,19 @@ h1 {
 
 h2 {
     font-size: 53px;
-    text-decoration: underline;
     font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: .5em; /* 26px */
+
 }
 
 h3 {
     font-size: 20px;
     color: #48525c;
+    line-height: 1.2;
+    margin-bottom: 1.7em; /* 34px */
 }
 
-p {
-
-}
 
 
 /*****************************************************
@@ -87,7 +88,16 @@ CLASS SELECTORS
 
 .primary-content,
 .secondary-content {
-width: 60%
+    width: 60%;
+    margin: auto;
+}
+
+.wildlife {
+    color: white;
+    background-color: #434a52;
+    padding: 18% 24%;
+    border-top: 10px solid #FFA949;
+    margin: 105px 0 60px;
 }
 
 .primary-content,
