@@ -25,10 +25,14 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #48525c;
     line-height: 1.2;
     margin-bottom: 1.7em; /* 34px */
+}
+
+footer {
+    text-align: center;
 }
 
 
@@ -54,29 +58,11 @@ a:active {
     color: lightcoral;
 }
 
-a:focus {
-    color: white;
-    background-color: orange;
-}
-
 
 
 /*****************************************************
-ID SELECTORS
+MAIN STYLES
 *****************************************************/
-
-#main-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: solid 10px ffa949;
-}
-
-
-
-/*****************************************************
-CLASS SELECTORS
-*****************************************************/
-
 .main-header {
     background-color: #ffa949;
 }
@@ -87,10 +73,56 @@ CLASS SELECTORS
 }
 
 .primary-content,
+.main-header,
+.main-footer {
+    text-align: center;
+}
+
+.primary-content {
+    padding-top: 25px;
+    padding-bottom: 95px;
+}
+
+.secondary-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+    border-top: 2px solid lightgrey;
+}
+
+
+
+/*****************************************************
+LAYOUT STYLES
+*****************************************************/
+
+.primary-content,
 .secondary-content {
     width: 60%;
     margin: auto;
 }
+
+/*****************************************************
+CLASS SELECTORS
+*****************************************************/
+
 
 .wildlife {
     color: white;
@@ -100,12 +132,11 @@ CLASS SELECTORS
     margin: 105px 0 60px;
 }
 
-.primary-content,
-.main-header {
-    text-align: center;
-}
 
-.t-border {
-    border-top: 2px solid lightgrey;
-}
+
+
+
+
+
+
 
