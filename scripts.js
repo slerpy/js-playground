@@ -45,16 +45,32 @@
  * into getRandom()
  */
 
-function getRandom( upper ) {
-    var randomNumber = Math.floor( Math.random() * upper ) + 1;
-    return randomNumber;
-}
-
-console.log(getRandom(1000));
+//function getRandom( upper ) {
+//    var randomNumber = Math.floor( Math.random() * upper ) + 1;
+//    return randomNumber;
+//}
+//
+//console.log(getRandom(1000));
 
 //
 // 05-05
 //
 
 
+/*
+ Random generator with inputs for arbitrary low and high numbers
+ */
 
+
+function letsGetRandom ( low, high ) {
+    if ( high <= low ) {
+        throw new Error( 'Low must be an integer less than high.' );
+    } else {
+        if ( isNaN( low ) || isNaN( high )) {
+            throw new Error( 'You need to use actual integers, do NOT spell them out' );
+        } else {
+            return Math.floor( Math.random() * ( high - low + 1 ) ) + low;
+        }
+    }
+}
+console.log( letsGetRandom( 10, 11 ) );
