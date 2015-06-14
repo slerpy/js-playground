@@ -23,7 +23,7 @@ function printSongs( songs ) {
 }
 
 function print(html) {
-    document.write(html);
+    document.write('<');
 }
 
 
