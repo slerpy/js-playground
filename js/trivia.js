@@ -1,6 +1,15 @@
 /*
-    Two dimensional arrays.
+        Two dimensional arrays.
+
+        If this was about more than just practicing with arrays I would
+        add .toLowerCase things to allow for case jumbles in user answers and
+        probably tweak a few other minor things.
+
+        I would also print them out on the html page as a <li>.
  */
+
+
+
 
 
 var questions = [
@@ -9,9 +18,11 @@ var questions = [
     ['Who is the Linux OS named after?', 'Linus Torvalds']
 ];
 
+
+var answer;
 var correctAnswers = [];
 var incorrectAnswers = [];
-var answer;
+
 
 
 function printCorrect() {
@@ -30,6 +41,7 @@ function printIncorrect() {
 }
 
 
+
 for (var i = 0; i < questions.length; i += 1) {
     answer = prompt(questions[i][0]);
     if (answer === questions[i][1]) {
@@ -40,6 +52,7 @@ for (var i = 0; i < questions.length; i += 1) {
         incorrectAnswers.push(questions[i].join(' '));
     }
 }
+
 
 
 printCorrect();
